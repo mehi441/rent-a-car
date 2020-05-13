@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bebf100e029c417cbc31353d6b59807c" Name="Diagram1">
+        <EntityTypeShape EntityType="WinFormLayiheDBModel.Admins" Width="1.5" PointX="0.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinFormLayiheDBModel.Brands" Width="1.5" PointX="7.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinFormLayiheDBModel.Cars" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinFormLayiheDBModel.Clients" Width="1.5" PointX="0.625" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinFormLayiheDBModel.Models" Width="1.5" PointX="7.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinFormLayiheDBModel.Rents" Width="1.5" PointX="2.875" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Rents_Admins" ManuallyRouted="false" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Cars_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Models_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Cars_Models" ManuallyRouted="false" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Rents_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Rents_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="WinFormLayiheDBModel.FK_Rents_Admins1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
