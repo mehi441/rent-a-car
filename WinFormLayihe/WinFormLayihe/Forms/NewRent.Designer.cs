@@ -43,8 +43,11 @@
             this.btnRent = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.numYear = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.numTotalPrice = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTotalPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // lblClient
@@ -153,12 +156,13 @@
             0,
             0});
             this.numPrice.Name = "numPrice";
-            this.numPrice.Size = new System.Drawing.Size(109, 22);
+            this.numPrice.Size = new System.Drawing.Size(120, 22);
             this.numPrice.TabIndex = 11;
+            this.numPrice.ValueChanged += new System.EventHandler(this.numPrice_ValueChanged);
             // 
             // btnRent
             // 
-            this.btnRent.Location = new System.Drawing.Point(32, 331);
+            this.btnRent.Location = new System.Drawing.Point(32, 411);
             this.btnRent.Name = "btnRent";
             this.btnRent.Size = new System.Drawing.Size(290, 42);
             this.btnRent.TabIndex = 12;
@@ -188,11 +192,35 @@
             this.numYear.Size = new System.Drawing.Size(120, 22);
             this.numYear.TabIndex = 14;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(29, 333);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Total Price";
+            // 
+            // numTotalPrice
+            // 
+            this.numTotalPrice.Enabled = false;
+            this.numTotalPrice.Location = new System.Drawing.Point(32, 353);
+            this.numTotalPrice.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numTotalPrice.Name = "numTotalPrice";
+            this.numTotalPrice.Size = new System.Drawing.Size(120, 22);
+            this.numTotalPrice.TabIndex = 16;
+            // 
             // NewRent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 413);
+            this.ClientSize = new System.Drawing.Size(359, 483);
+            this.Controls.Add(this.numTotalPrice);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.numYear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRent);
@@ -211,6 +239,7 @@
             this.Name = "NewRent";
             ((System.ComponentModel.ISupportInitialize)(this.numPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTotalPrice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +262,7 @@
         private System.Windows.Forms.Button btnRent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numYear;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown numTotalPrice;
     }
 }

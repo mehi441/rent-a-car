@@ -76,14 +76,26 @@ namespace WinFormLayihe.Forms
             db.Rents.Add(rent);
             db.SaveChanges();
             MessageBox.Show("Car " +  rent.Cars.Number+ " rented");
+            this.Close();
         }
         private void cbCars_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbCars.Text!="Choose")
             {
                 numPrice.Value= (decimal)db.Cars.FirstOrDefault(c => cbCars.Text.Contains(c.Number)).Price;
-                numYear.Value = (decimal)db.Cars.FirstOrDefault(c => cbCars.Text.Contains(c.Number)).Year;                               
+                numYear.Value = (decimal)db.Cars.FirstOrDefault(c => cbCars.Text.Contains(c.Number)).Year;
             }
+            else
+            {
+                numPrice.Value = numYear.Value = numTotalPrice.Value = 0;
+            }
+        }
+
+       
+
+        private void numPrice_ValueChanged(object sender, EventArgs e)
+        {
+            numTotalPrice.Value = (decimal)((dtpPromise.Value - dtpSell.Value).TotalDays+ 1) * numPrice.Value;
         }
     }
 }
