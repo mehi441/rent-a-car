@@ -51,7 +51,7 @@
             this.reportToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(267, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(417, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -60,24 +60,28 @@
             this.adminsToolStripMenuItem.Name = "adminsToolStripMenuItem";
             this.adminsToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.adminsToolStripMenuItem.Text = "Admins";
+            this.adminsToolStripMenuItem.Click += new System.EventHandler(this.adminsToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.usersToolStripMenuItem.Text = "Clients";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // carToolStripMenuItem
             // 
             this.carToolStripMenuItem.Name = "carToolStripMenuItem";
             this.carToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.carToolStripMenuItem.Text = "Cars";
+            this.carToolStripMenuItem.Click += new System.EventHandler(this.carToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
             // 
             // btnNewRent
             // 

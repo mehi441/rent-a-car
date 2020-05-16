@@ -30,5 +30,27 @@ namespace WinFormLayihe.Forms
             ReceiveCar receiveCar = new ReceiveCar(AdminId);
             receiveCar.Show();
         }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientsForm clientsForm = new ClientsForm();
+            clientsForm.Show();
+        }
+
+        private void adminsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminsForm adminsForm = new AdminsForm();
+            adminsForm.Show();
+        }
+
+        private void carToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
