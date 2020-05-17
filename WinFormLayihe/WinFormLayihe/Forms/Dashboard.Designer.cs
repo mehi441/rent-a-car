@@ -43,6 +43,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.c = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRents)).BeginInit();
             this.SuspendLayout();
@@ -172,11 +173,21 @@
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Location = new System.Drawing.Point(1008, 11);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(78, 17);
+            this.lblWelcome.TabIndex = 4;
+            this.lblWelcome.Text = "Welcome : ";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1259, 425);
+            this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.dgvRents);
             this.Controls.Add(this.btnReceiveCar);
             this.Controls.Add(this.btnNewRent);
@@ -209,5 +220,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn c;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Label lblWelcome;
     }
 }

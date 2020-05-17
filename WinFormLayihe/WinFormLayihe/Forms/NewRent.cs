@@ -25,6 +25,7 @@ namespace WinFormLayihe.Forms
             dtpPromise.Value = DateTime.Now.Date;
             FillCBCars();
             numYear.Controls.RemoveAt(0);
+            lblAdmin.Text += db.Admins.Find(adminId).FullName;
         }
         private void FillCBClients()
         {

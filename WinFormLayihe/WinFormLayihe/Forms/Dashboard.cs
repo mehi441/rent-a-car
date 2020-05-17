@@ -21,6 +21,7 @@ namespace WinFormLayihe.Forms
             this.db = new WinFormLayiheDBEntities();
             AdminId = adminId;
             GetLast10();
+            lblWelcome.Text += db.Admins.FirstOrDefault(a => a.Id == adminId).FullName;
         }
 
         private void btnNewRent_Click(object sender, EventArgs e)

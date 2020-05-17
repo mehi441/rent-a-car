@@ -52,11 +52,11 @@
             this.Column5,
             this.c,
             this.Column6});
-            this.dgvRents.Location = new System.Drawing.Point(12, 116);
+            this.dgvRents.Location = new System.Drawing.Point(12, 12);
             this.dgvRents.Name = "dgvRents";
             this.dgvRents.RowHeadersWidth = 51;
             this.dgvRents.RowTemplate.Height = 24;
-            this.dgvRents.Size = new System.Drawing.Size(1067, 322);
+            this.dgvRents.Size = new System.Drawing.Size(1067, 426);
             this.dgvRents.TabIndex = 0;
             this.dgvRents.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvRents_RowHeaderMouseDoubleClick);
             // 

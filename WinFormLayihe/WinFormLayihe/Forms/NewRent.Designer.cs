@@ -45,6 +45,7 @@
             this.numYear = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.numTotalPrice = new System.Windows.Forms.NumericUpDown();
+            this.lblAdmin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYear)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTotalPrice)).BeginInit();
@@ -53,7 +54,7 @@
             // lblClient
             // 
             this.lblClient.AutoSize = true;
-            this.lblClient.Location = new System.Drawing.Point(29, 18);
+            this.lblClient.Location = new System.Drawing.Point(23, 46);
             this.lblClient.Name = "lblClient";
             this.lblClient.Size = new System.Drawing.Size(43, 17);
             this.lblClient.TabIndex = 0;
@@ -62,7 +63,7 @@
             // cbClients
             // 
             this.cbClients.FormattingEnabled = true;
-            this.cbClients.Location = new System.Drawing.Point(32, 38);
+            this.cbClients.Location = new System.Drawing.Point(26, 66);
             this.cbClients.Name = "cbClients";
             this.cbClients.Size = new System.Drawing.Size(256, 24);
             this.cbClients.Sorted = true;
@@ -71,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 80);
+            this.label2.Location = new System.Drawing.Point(23, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 17);
             this.label2.TabIndex = 2;
@@ -79,7 +80,7 @@
             // 
             // dtpSell
             // 
-            this.dtpSell.Location = new System.Drawing.Point(32, 100);
+            this.dtpSell.Location = new System.Drawing.Point(26, 128);
             this.dtpSell.Name = "dtpSell";
             this.dtpSell.Size = new System.Drawing.Size(173, 22);
             this.dtpSell.TabIndex = 3;
@@ -87,7 +88,7 @@
             // 
             // dtpPromise
             // 
-            this.dtpPromise.Location = new System.Drawing.Point(32, 163);
+            this.dtpPromise.Location = new System.Drawing.Point(26, 191);
             this.dtpPromise.Name = "dtpPromise";
             this.dtpPromise.Size = new System.Drawing.Size(173, 22);
             this.dtpPromise.TabIndex = 5;
@@ -96,7 +97,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 143);
+            this.label3.Location = new System.Drawing.Point(23, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 17);
             this.label3.TabIndex = 4;
@@ -105,7 +106,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 205);
+            this.label4.Location = new System.Drawing.Point(23, 233);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 17);
             this.label4.TabIndex = 6;
@@ -114,7 +115,7 @@
             // cbCars
             // 
             this.cbCars.FormattingEnabled = true;
-            this.cbCars.Location = new System.Drawing.Point(32, 225);
+            this.cbCars.Location = new System.Drawing.Point(26, 253);
             this.cbCars.Name = "cbCars";
             this.cbCars.Size = new System.Drawing.Size(256, 24);
             this.cbCars.TabIndex = 7;
@@ -122,7 +123,7 @@
             // 
             // btnAddClient
             // 
-            this.btnAddClient.Location = new System.Drawing.Point(294, 38);
+            this.btnAddClient.Location = new System.Drawing.Point(288, 66);
             this.btnAddClient.Name = "btnAddClient";
             this.btnAddClient.Size = new System.Drawing.Size(28, 24);
             this.btnAddClient.TabIndex = 8;
@@ -132,7 +133,7 @@
             // 
             // btnAddCar
             // 
-            this.btnAddCar.Location = new System.Drawing.Point(294, 224);
+            this.btnAddCar.Location = new System.Drawing.Point(288, 252);
             this.btnAddCar.Name = "btnAddCar";
             this.btnAddCar.Size = new System.Drawing.Size(28, 24);
             this.btnAddCar.TabIndex = 9;
@@ -143,7 +144,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 272);
+            this.label5.Location = new System.Drawing.Point(23, 300);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 17);
             this.label5.TabIndex = 10;
@@ -151,7 +152,7 @@
             // 
             // numPrice
             // 
-            this.numPrice.Location = new System.Drawing.Point(32, 292);
+            this.numPrice.Location = new System.Drawing.Point(26, 320);
             this.numPrice.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -164,7 +165,7 @@
             // 
             // btnRent
             // 
-            this.btnRent.Location = new System.Drawing.Point(32, 411);
+            this.btnRent.Location = new System.Drawing.Point(26, 439);
             this.btnRent.Name = "btnRent";
             this.btnRent.Size = new System.Drawing.Size(290, 42);
             this.btnRent.TabIndex = 12;
@@ -175,7 +176,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(199, 272);
+            this.label1.Location = new System.Drawing.Point(193, 300);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 17);
             this.label1.TabIndex = 13;
@@ -183,7 +184,7 @@
             // 
             // numYear
             // 
-            this.numYear.Location = new System.Drawing.Point(202, 292);
+            this.numYear.Location = new System.Drawing.Point(196, 320);
             this.numYear.Maximum = new decimal(new int[] {
             2050,
             0,
@@ -197,7 +198,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 333);
+            this.label6.Location = new System.Drawing.Point(23, 361);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 17);
             this.label6.TabIndex = 15;
@@ -206,7 +207,7 @@
             // numTotalPrice
             // 
             this.numTotalPrice.Enabled = false;
-            this.numTotalPrice.Location = new System.Drawing.Point(32, 353);
+            this.numTotalPrice.Location = new System.Drawing.Point(26, 381);
             this.numTotalPrice.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -216,11 +217,21 @@
             this.numTotalPrice.Size = new System.Drawing.Size(120, 22);
             this.numTotalPrice.TabIndex = 16;
             // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Location = new System.Drawing.Point(164, 9);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(59, 17);
+            this.lblAdmin.TabIndex = 17;
+            this.lblAdmin.Text = "Admin : ";
+            // 
             // NewRent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 483);
+            this.ClientSize = new System.Drawing.Size(323, 503);
+            this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.numTotalPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.numYear);
@@ -266,5 +277,6 @@
         private System.Windows.Forms.NumericUpDown numYear;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numTotalPrice;
+        private System.Windows.Forms.Label lblAdmin;
     }
 }
