@@ -128,6 +128,7 @@
             this.btnAddClient.TabIndex = 8;
             this.btnAddClient.Text = "+";
             this.btnAddClient.UseVisualStyleBackColor = true;
+            this.btnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
             // 
             // btnAddCar
             // 
@@ -137,6 +138,7 @@
             this.btnAddCar.TabIndex = 9;
             this.btnAddCar.Text = "+";
             this.btnAddCar.UseVisualStyleBackColor = true;
+            this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
             // 
             // label5
             // 

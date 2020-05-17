@@ -34,3 +34,5 @@ C:\Users\mehib\Desktop\rent-a-car\WinFormLayihe\WinFormLayihe\obj\Debug\WinFormL
 C:\Users\mehib\Desktop\rent-a-car\WinFormLayihe\WinFormLayihe\obj\Debug\WinFormLayihe.Forms.CheckRent.resources
 C:\Users\mehib\Desktop\rent-a-car\WinFormLayihe\WinFormLayihe\obj\Debug\WinFormLayihe.Forms.ClientsForm.resources
 C:\Users\mehib\Desktop\rent-a-car\WinFormLayihe\WinFormLayihe\obj\Debug\WinFormLayihe.Forms.AdminsForm.resources
+C:\Users\mehib\Desktop\rent-a-car\WinFormLayihe\WinFormLayihe\obj\Debug\WinFormLayihe.Forms.CarsForm.resources
+C:\Users\mehib\Desktop\rent-a-car\WinFormLayihe\WinFormLayihe\obj\Debug\WinFormLayihe.Forms.ReportForm.resources

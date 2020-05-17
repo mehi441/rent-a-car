@@ -97,5 +97,19 @@ namespace WinFormLayihe.Forms
         {
             numTotalPrice.Value = (decimal)((dtpPromise.Value - dtpSell.Value).TotalDays+ 1) * numPrice.Value;
         }
+
+        private void btnAddClient_Click(object sender, EventArgs e)
+        {
+            ClientsForm clientsForm = new ClientsForm();
+            clientsForm.Show();
+            this.Close();
+        }
+
+        private void btnAddCar_Click(object sender, EventArgs e)
+        {
+            CarsForm carsForm = new CarsForm();
+            carsForm.Show();
+            this.Close();
+        }
     }
 }
