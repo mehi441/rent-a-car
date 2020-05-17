@@ -22,6 +22,7 @@ namespace WinFormLayihe.Forms
             FillDgvCars();
             FillCbBrands();
         }
+        int ClickedCarId;
 
         private void FillDgvCars()
         {
@@ -162,7 +163,61 @@ namespace WinFormLayihe.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            Reset();
+        }
 
+        private void dgvCars_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            ClickedCarId = (int)dgvCars.Rows[e.RowIndex].Cells[0].Value;
+            cbBrands.SelectedItem = dgvCars.Rows[e.RowIndex].Cells[1].Value;
+            cbModels.SelectedItem = dgvCars.Rows[e.RowIndex].Cells[2].Value;
+            txtNumber.Text = dgvCars.Rows[e.RowIndex].Cells[3].Value.ToString();
+            numPrice.Value = Convert.ToInt32( dgvCars.Rows[e.RowIndex].Cells[4].Value);
+            numYear.Value = (int)dgvCars.Rows[e.RowIndex].Cells[5].Value;
+            txtPassportId.Text = dgvCars.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+            btnAdd.Visible = false;
+            btnUpdate.Visible = true;
+            btnDelete.Visible = true;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Cars cars = db.Cars.Find(ClickedCarId);
+            cars.BrandId = db.Brands.FirstOrDefault(b => b.Name == cbBrands.Text).Id;
+            cars.ModelId = db.Models.FirstOrDefault(m=> m.Name==cbModels.Text&& m.BrandId==cars.BrandId).Id;
+            cars.Number = txtNumber.Text;
+            cars.Price = numPrice.Value;
+            cars.Year = (int)numYear.Value;
+            cars.PassportNumber = txtPassportId.Text;
+            db.SaveChanges();
+            FillDgvCars();
+            Reset();
+
+            
+        
+        }
+        private void Reset()
+        {
+            FillCbBrands();
+            cbModels.Items.Clear();
+            cbModels.Text = string.Empty;
+            txtNumber.Text = txtPassportId.Text = string.Empty;
+            numPrice.Value = numYear.Value = 0;
+            ClickedCarId = 0;
+            btnAdd.Visible = true;
+            
+            btnUpdate.Visible = false;
+            btnDelete.Visible = false;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Cars cars = db.Cars.Find(ClickedCarId);
+            db.Cars.Remove(cars);
+            db.SaveChanges();
+            FillDgvCars();
+            Reset();
         }
     }
 }
